@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #1d3557;
+    font-family: 'Lato', sans-serif; 
+}
+/* header */
+header {
+    background-color:#457b9d;
+    font-family: 'Lato', sans-serif; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "start mstart middle middle mend end";
+}
+#headline{
+    font-family: 'Lato', sans-serif;
+    grid-area: middle;
+    margin: auto;
+    font-size: 6vh;
+    color: #a8dadc;
+
+}
+.Subscribe {
+    font-family: 'Lato', sans-serif;
+    grid-area: start;
+    margin: auto;
+    cursor: pointer;
+}
+.icon-one{
+    grid-area: mend;
+    margin: auto;
+    color: #1d3557;
+}
+.icon-two{
+    grid-area: end;
+    margin: auto;
+}
+
+/* navbar */
+nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 6vh;
+    grid-template-areas: "one two three four five six";
+    font-family: 'Lato', sans-serif;
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a8dadc;
+    /* border: #1d3557 solid 1px; */
+    text-decoration: none;
+    
+}
+.box:hover{
+    background-color: #f1faee;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.Travel{
+    grid-area: one;
+    background-color: #f1faee;
+}
+.Economy{
+    grid-area: two;
+    /* background-color: chartreuse; */
+}
+.Family{
+    grid-area: three;
+    /* background-color: chocolate; */
+}
+.Sport{
+    grid-area: four;
+    /* background-color: crimson; */
+}
+.Health{
+    grid-area: five;
+    /* background-color: darkcyan; */
+}
+.Business{
+    grid-area: six;
+    /* background-color: darkolivegreen; */
+}
+/* main section */
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "at at at at at at sb sb"
+    "at at at at at at sb sb"
+    "at at at at at at sb sb";
+
+
+}
+.article{
+    background-color: #f1faee;
+    grid-area: at;
+}
+
+
+.art-date{
+    margin: 25px;
+}
+.art-title{
+    margin: 25px;
+    font-size: 55px;
+    color: #e63946;
+
+}
+.art-author{
+    margin: 25px;
+}
+.art-text{
+    margin: 25px;
+    font-size: 20px;
+    
+}
+/* sidebar */
+.sb{
+    grid-area: sb;
+    background-color: #ebf7ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.date{
+    margin: 10px;
+}
+.title{
+    color: #e63946;
+    margin: 10px;
+    font-size: 30px;
+}
+.author{
+    margin: 10px;
+}
+.text{
+    font-size: 25px;
+}
+
+/* lownav */
+.lownav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "st st mi smi en en";
+    font-family: 'Lato', sans-serif;
+    background-color: #f1faee;
+    /* background-color: #a8dadc; */
+}
+.previouspage{
+    grid-area: mi;
+    margin: auto;
+    /* padding-bottom: 2vh; */
+
+}
+.nextpage{
+    grid-area: smi;
+    margin: auto;
+    /* padding-bottom: 2vh; */
+
+}
+#arrow{
+    color: #e63946;
+}
+/* footer */
+footer{
+    background-color: #1d3557;
+    /* height: 10vh; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "st sti mi smi eni en";
+    font-family: 'Lato', sans-serif;
+
+}
+.join{
+    grid-area: mi;
+    color: #f1faee;
+    margin: auto;
+}
+.home{
+    grid-area: smi;
+    color: #f1faee;
+    margin: auto;
+}
+.insta{
+    grid-area: sti;
+    color: #f1faee;
+    margin: auto;
+}
+.facebook{
+    grid-area: eni;
+    color: #f1faee;
+    margin: auto;
+}
+.fo{
+    text-decoration: none;
+    color: #f1faee;
+}
+.fo:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+.fab{
+     color:#f1faee;
+     font-size: 25px;
+}
+.fas{
+    color:#f1faee;
+    font-size: 25px;
+}
+.fas:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+.fab:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+
+/* @media(max-width:1035px){
+
+    .travelarticles{
+        background-color: #f1faee;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,400px);
+        grid-template-areas: 
+        "art1"
+        "art2"
+        "art3"
+        "art4"
+        "art5"
+        "art6";
+    }
+}
+@media(max-width:550px){
+
+    .travelarticles{
+        grid-template-rows: repeat(6, 550px);
+    }
+} */
+@media(max-width:1050px){
+    .main-section{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "at at at at at at at at"
+        "at at at at at at at at"
+        "at at at at at at at at";
+    }
+    
+    .sb{
+        display: none;
+    }
+
+}

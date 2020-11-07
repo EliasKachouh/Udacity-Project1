@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #1d3557;
+}
+/* header */
+header {
+    background-color:#457b9d;
+    font-family: 'Lato', sans-serif; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "start mstart middle middle mend end";
+}
+#headline{
+    font-family: 'Lato', sans-serif;
+    grid-area: middle;
+    margin: auto;
+    font-size: 6vh;
+    color: #a8dadc;
+
+}
+
+
+.Subscribe {
+    font-family: 'Lato', sans-serif;
+    grid-area: start;
+    margin: auto;
+    cursor: pointer;
+}
+.icon-one{
+    grid-area: mend;
+    margin: auto;
+    color: #1d3557;
+}
+.icon-two{
+    grid-area: end;
+    margin: auto;
+}
+/* navbar */
+nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 6vh;
+    grid-template-areas: "one two three four five six";
+    font-family: 'Lato', sans-serif;
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a8dadc;
+    /* border: #1d3557 solid 1px; */
+    text-decoration: none;
+    
+}
+.box:hover{
+    background-color: #f1faee;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.Travel{
+    grid-area: one;
+    background-color: #f1faee;
+}
+.Economy{
+    grid-area: two;
+    /* background-color: chartreuse; */
+}
+.Family{
+    grid-area: three;
+    /* background-color: chocolate; */
+}
+.Sport{
+    grid-area: four;
+    /* background-color: crimson; */
+}
+.Health{
+    grid-area: five;
+    /* background-color: darkcyan; */
+}
+.Business{
+    grid-area: six;
+    /* background-color: darkolivegreen; */
+}
+/* articles */
+
+.travelarticles{
+    /* height: 100vh; */
+    background-color: #f1faee;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas: 
+    "art1 art2"
+    "art3 art4"
+    "art5 art6";
+    /* background-color: yellow; */
+    /* grid-gap: 30px; */
+}
+.art{
+    text-decoration: none;
+}
+.article{
+    /* background-color: yellowgreen; */
+    background-color: #f1faee;
+    margin: 50px;
+    font-family: 'Lato', sans-serif;
+    /* box-shadow: 10px 10px 95px -6px rgba(128,128,128,1); */
+    border-radius: 20px;
+
+}
+.date{
+    padding: 15px;
+}
+.title{
+    font-size: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #e63946;
+    font-family: 'Lato', sans-serif;
+}
+.author{
+    padding: 15px;
+    font-size: 13px;
+}
+.preview{
+    padding: 15px;
+    font-size: 18px;
+}
+.links{
+    color: #e63946;
+}
+.links:hover{
+    color: #1d3557;
+}
+.rmlink{
+    color: #e63946;
+}
+.rmlink:hover{
+    color: #1d3557;
+}
+/* lownav */
+.lownav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "st st mi smi en en";
+    font-family: 'Lato', sans-serif;
+    background-color: #f1faee;
+}
+.previouspage{
+    grid-area: mi;
+    margin: auto;
+    padding-bottom: 2vh;
+
+}
+.nextpage{
+    grid-area: smi;
+    margin: auto;
+    padding-bottom: 2vh;
+
+}
+#arrow{
+    color: #e63946;
+}
+/* footer */
+
+footer{
+    background-color: #1d3557;
+    /* height: 10vh; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh;
+    grid-template-areas: "st sti mi smi eni en";
+    font-family: 'Lato', sans-serif;
+
+}
+.join{
+    grid-area: mi;
+    color: #f1faee;
+    margin: auto;
+}
+.home{
+    grid-area: smi;
+    color: #f1faee;
+    margin: auto;
+}
+.insta{
+    grid-area: sti;
+    color: #f1faee;
+    margin: auto;
+}
+.facebook{
+    grid-area: eni;
+    color: #f1faee;
+    margin: auto;
+}
+.fo{
+    text-decoration: none;
+    color: #f1faee;
+}
+.fo:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+.fab{
+     color:#f1faee;
+     font-size: 25px;
+}
+.fas{
+    color:#f1faee;
+    font-size: 25px;
+}
+.fas:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+.fab:hover{
+    cursor: pointer;
+    color: #a8dadc;
+}
+
+@media(max-width:1035px){
+
+    .travelarticles{
+        background-color: #f1faee;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,400px);
+        grid-template-areas: 
+        "art1"
+        "art2"
+        "art3"
+        "art4"
+        "art5"
+        "art6";
+    }
+}
+@media(max-width:550px){
+
+    .travelarticles{
+        grid-template-rows: repeat(6, 550px);
+    }
+}
